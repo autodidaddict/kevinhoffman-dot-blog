@@ -3,14 +3,8 @@ title = "About Kevin Hoffman"
 hasMath = false 
 +++
 
-Hello, I'm an example site that uses the Hugo Tufte theme.
+<img src="/images/penfold_panic.jpeg" height="128">
 
+Hello, I'm Kevin Hoffman. You may remember me from such specials as [wasmCloud](https://wasmcloud.dev), [Cosmonic](https://cosmonic.com), or even some books I've written, including _Programming WebAssembly with Rust_, _Cloud Native Go_, _Building Microservices with ASP.NET Core_, and dozens more that are now outdated and irrelevant, or those two fantasy novels I wrote that no one reads.
 
-Here is a bullet list:
-
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-- Arcu felis bibendum ut tristique et. Volutpat odio facilisis mauris sit amet massa.
-- Sed id semper risus in hendrerit gravida rutrum.
-  - Risus pretium quam vulputate dignissim suspendisse in est ante. Bibendum neque egestas congue quisque egestas diam in arcu.
-  - Nulla porttitor massa id neque aliquam. Laoreet non curabitur gravida arcu ac tortor dignissim convallis.
-- Sit amet consectetur adipiscing elit.
+This blog is a venue for my thoughts and ramblings that are unconnected to my professional outlets.
