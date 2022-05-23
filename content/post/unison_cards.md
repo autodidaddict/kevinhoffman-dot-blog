@@ -21,7 +21,7 @@ These points are kind of dense, so I'll unpack it a bit. One subtle but importan
 
 When my function depends on another function, it depends on _just that function_. Dependencies in Unison are much more fine-grained than in other languages, and the concept of a library/bundle/package is much more flexible.
 
-Even though Unison is "hashes all the way down", developers still need to type something, so it does have a syntax. I don't know if it's the Haskell-like style of the syntax that made me want to start with a type system, but here's the first set of definitions I entered:
+Even though Unison is "hashes all the way down", developers still need to type something, so it does have a syntax. I like to start by setting up the types I'm going to need, so here's the first set of definitions I entered:
 
 ```haskell {linenos=table, hl_lines=["4-5"]}
 unique type Suit = Hearts | Clubs | Spades | Diamonds
