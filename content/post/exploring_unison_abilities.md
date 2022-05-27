@@ -78,7 +78,7 @@ Stream.trace s =
 ```
 The type signature `Stream.trace : '{g, Stream a} r -> {g} r` means that this function takes a delayed function that returns type `r` (which can also utilize a generic ability `g`) and returns the executed result of type `r`. This is how `trace` can wrap an algebraic effect around a function and still preserve that function's return value.
 
-Line 4 illustrates a _request constructor_. This is a pattern match for when the function to which we're providing the ability requests a function from the ability--in this case the `emit` function. When the function requests an `emit`, we invoke `Debug.trace`. If this were something like a message broker handler, we might do something like `Broker.publish` on a given topic.
+Line 4 illustrates a _request constructor_. This is a pattern match for when the caller of the ability requests one of the ability operations--in this case the `emit` function. When the function requests an `emit`, we invoke `Debug.trace`. If this were something like a message broker handler, we might do something like `Broker.publish` on a given topic.
 
 When we see `handle !k with h` inside the definition for `h`, we're using the handler recursively. The `k` here is a _continuation_. Think of it like a pointer to the rest of the code that occurs after the wrapped function made its ability request. If we continue handling, we move the code forward, but we can also do things like choose to stop execution, as is the case in the `Abort` ability.
 
