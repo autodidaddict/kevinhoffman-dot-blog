@@ -60,7 +60,7 @@ testMain _ =
   (cards, deck) = (Stream.trace dealt_hand)
   printLine (List.map Card.render cards |> Text.join ",")
 ```
-There are a couple of subtle changes here that required me to enlist the help of some people in the Unison slack. In this new code, `dealt_hand` is a delayed computation that returns another delayed computation. This delayed computation still requires both the `Random` and the `Stream` abilities.
+There are a couple of subtle changes here that required me to enlist the help of some people in the Unison slack. In this new code, `dealt_hand` is a delayed computation. The `dealt` variable within `dealt_hand` represents another delayed computation, which is handled inside the scope by `Random.lcg`.
 
 What's important to notice is that we pass the `dealt_hand` delayed computation as an argument to the `Stream.trace` function (which I'll show shortly). I go back and forth between understanding how this works and being completely befuddled. It can be a little confusing figuring out that calling `Stream.trace` with the delayed execution actually returns the result of the delayed computation.
 
