@@ -77,7 +77,7 @@ Some of you readers may have been shouting at this post, _"Just run the calls co
  >}}
 {{< section "end" >}}
 
-Each time we split the work into `n` concurrent processes, we've divided the original problem of the distributed deadline into `n` _smaller, parallel problems_. So instead of the timeout being calculated as $\textstyle\sum_{i=1}^n * duration$, where $n$ is the number of processes, it is instead the timeout used by the longest-running sub-process. The core problem remains, however, it is just smaller.
+Each time we split the work into `n` concurrent processes, we've divided the original problem of the distributed deadline into `n` _smaller, parallel problems_. So instead of the timeout being calculated as `duration * num_processes`, instead it's the timeout used by the longest-running sub-process. The core problem remains, however, it is just smaller.
 
 At this point our problem may resemble one that we can solve with _map-reduce_ or other well-known distributed patterns for which there are open source and off-the-shelf commercial solutions. If we can solve it by leveraging those tools, then we should definitely consider this when evaluating pros and cons. Just be wary of the _"every problem looks like a nail when we're holding a hammer"_ fallacy. Not everything is well suited to distributed map-reduce, no matter how cool those tools might be.
 
