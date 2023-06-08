@@ -103,7 +103,7 @@ encodePairs = cases
 ```
 The first change is that I have to use `cases` here to pattern match on the arguments, since Unison doesn't support the multiple function head syntax like Elixir.
 
-The next source of trouble was the `Exception` ability. There are a number of functions that I needed to use that return data of type `Optional`. It took many hours of smashing my head against the desk and the _remarkably_ (possibly even saint-like) patient efforts of the folks in the Unison slack channel to get me past this. I couldn't just call `unwrap()` or put a `?` at the end of every function call like I can in Rust.
+The next source of trouble was the `Exception` ability. There are a number of functions that I needed to use that return data of type `Optional`. It took many hours of smashing my head against the desk and the _remarkably_ (possibly even saint-like) patient efforts of the folks in the Unison slack channel to get me past this. I couldn't just call `unwrap()` or put a `?` at the end of every function call like I can in Rust, but, as you'll see in the following code, calling `toAbort` on an `Optional` is similar to the Rust `?` and `Result` pair.
 
 The `encodePairs` function calls two other important functions: `placeValue` and `appendCode`. The first obtains a precision value that can in turn be used to locate a character within the base-20 alphabet. The latter appends that code to the current string.
 
