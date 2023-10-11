@@ -84,7 +84,7 @@ With the server spawned onto a node and the node configured with a cookie, we ca
 Now for the amazing part. Fire up `iex` as a named cluster node:
 
 ```shell
-iex --name ergo-demo@127.0.0.1 --cookie 123
+iex --name ergo-demo@127.0.0.1 --cookie cookienomnom
 ```
 
 To show that there's nothing up my sleeve:
