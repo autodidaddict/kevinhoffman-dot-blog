@@ -8,6 +8,7 @@ description: "Tales from the Distributed Systems Crypt - The Elevator Problem"
 subtitle: "Learning about the Elevator Problem the Hard Way"
 categories: 
     - "distsys"
+    - "mud"
 ---
 _In this post I talk about learning a valuable distributed systems lesson the hard way._
 
