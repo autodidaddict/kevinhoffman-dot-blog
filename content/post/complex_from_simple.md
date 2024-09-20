@@ -36,7 +36,7 @@ Finally, (if you've seen the movie), think back to the microbots from [Big Hero 
 Complex systems arise from composing **_simple_** rules and building blocks, and are easier to operate, maintain, and enhance than their evil twins: _complicated_ systems.
 
 ## Complicated Distributed Systems
-The hallmarks of complicated systems are complex rules or foundational building blocks. Rather than progressively layer simple rules on top of each other, complicated systems try and manage "everything" with one set of logic to rule it all. Complicated systems feel the need to _tackle complexity_, and ironically they do so by increasing how complicated they are.
+The hallmarks of complicated systems are complex rules or foundational building blocks. Rather than progressively layer simple rules on top of each other, complicated systems try to manage "everything" with one set of logic to rule it all. Complicated systems feel the need to _tackle complexity_, and ironically they do so by increasing how complicated they are.
 
 You can see this in systems like Kubernetes. If you look at its origins, and peek deep down into some of the original code, it looks like the goal was to build a complex system from simple rules. But as the number of things Kubernetes could do grew, rather than creating more primitive Lego blocks, Kubernetes ended up being more of a shelf for pre-made Lego sets like the Millenium Falcon and the Death Star. Kubernetes is so _complicated_, in fact, that there is a cottage industry of software vendors making their money entirely on the premise that they will reduce or tackle Kubernetes' complexity. This is where things get ugly, because we're now in a realm where we're laying complex components (the "manager of managers" software) on top of already complex components, creating an incredibly complicated system.
 
@@ -53,4 +53,3 @@ A few tips and guidelines I've picked up as I learn to demand simpler rules:
 * Favor **choreography** over **orchestration**.
 * Be inspired by the [12 Factors](https://12factor.net/)
 
-So, go forth and _build less with even less_.
