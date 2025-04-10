@@ -10,6 +10,7 @@ categories:
     - "a2a"
     - "ai"
     - "google"
+    - "mcp"
 ---
 _A look at what A2A is, how it works, and why it matters_
 
